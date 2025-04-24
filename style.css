@@ -7,11 +7,20 @@ body{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    background-color: #f5f5f5;
+    background-color: #293f57;
     align-items: center;
     justify-content: center;
     margin: 0;
     height: 100vh;
+}
+
+.box{
+    background-color: #ededed;
+    padding: 30px;
+    border-radius: 20px;
+}
+h1{
+    color: #ffffff;
 }
 
 .btn{
@@ -32,6 +41,8 @@ body{
 
 .logo{
     width: 300px;
+    align-items: center;
+    justify-content: center;
     
 }
 .currency{
@@ -45,6 +56,7 @@ body{
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
+    border: none;
 }
 
 .currency select:hover{
@@ -58,6 +70,7 @@ body{
     font-size: 18px;
     margin-left: 10px;
     text-align: right;
+    border: none;
 }
 
 .swap-container{
@@ -71,3 +84,47 @@ body{
 select:focus, input:focus{
     outline: none;
 }
+
+@media (max-width: 768px) {
+    .box {
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  
+    .currency {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+  
+    .currency input {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .currency select {
+      width: 100%;
+    }
+  
+    .swap-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  
+    .logo {
+      margin-top: 100px;
+      width: 200px;
+    }
+  
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+  
